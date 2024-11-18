@@ -1,0 +1,188 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #333333;
+  background-color: #f9f9f9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #4CAF50; /* Fresh green for primary buttons and accents */
+  --secondary-color: #ffffff; /* Golden yellow for secondary highlights */
+  --background-color: #ffffff; /* Clean white background */
+  --text-color: #212121; /* Dark gray for text */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+button {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 7px 15px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388E3C; /* Darker green on hover */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.searchBar input {
+  width: 400px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid var(--shadow-color);
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px var(--shadow-color);
+  color: black;
+}
+
+.searchBar button {
+  width: 100px;
+  background-color: var(--secondary-color);
+  color: #333;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchBar button:hover {
+  background-color: #FFA000; /* Slightly darker yellow */
+}
+
+.meals {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.meals img {
+  width: 100%;
+  height: 270px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.mealImg {
+  width: 280px;
+  height: 380px;
+  text-align: center;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mealImg:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px var(--shadow-color);
+}
+
+.mealImg p {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.mealImg button {
+  width: 130px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mealImg button:hover {
+  background-color: #388E3C;
+}
+
+.mealInfo img {
+  width: 400px;
+  height: 400px;
+  border-radius: 12px;
+}
+
+
+/* meal info card css here ...... */
+.mealInfo {
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.mealInfo button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mealInfo button:hover {
+  background-color: #388E3C;
+}
+
+.mealInfo .info {
+  margin-top: -100px;
+}
+
+.msg {
+  text-align: center;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+}
